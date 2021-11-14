@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: rgb(187, 240, 213);
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.main {
+	margin-top: 2em;
+	width: 100%;
+}
+
+.main input {
+	padding-left: .65em;
+	font-size: 1em;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	line-height: 3em;
+	border-radius: 0;
+	background: none;
+	border: none;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.main input::placeholder {
+	font-weight: 400;
+	color: inherit;
+}
+
+.main input:focus {
+	outline: none;
+}
+
+.done, .tasks, .done ul li, .tasks ul li, .btns, footer {
+	display: flex;
+}
+
+.done {
+	margin-bottom: 1em;
+}
+
+.done, .tasks {
+	margin-top: 1em;
+	flex-direction: column;
+	text-align: center;
+}
+
+.btns {
+	flex-direction: row;
+	margin-right: -18px;
+}
+
+ul li {
+	color: #666;
+	font-size: 1em;
+	font-weight: 400;
+	background: white;
+	padding: .75em 1.2em;
+	border-radius: .3em;
+	margin: .5em 0;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 1.5;
+}
+
+.done ul li svg, .tasks ul li svg {
+	height: 36px;
+	margin-left: 1.2em;
+}
+
+.done ul li i, .tasks ul li i {
+	height: 36px;
+	margin-left: 1.2em;
+}
+
+.done .done {
+	fill: #FFD842;
+}
+
+footer {
+	flex-direction: column;
+	align-items: center;
+	margin: 3em 0;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+	height: 1.5em;
+	font-size: .75em;
+	color: rgba(0, 0, 0, 0.4);
+}
